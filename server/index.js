@@ -2,7 +2,10 @@ const express = require("express");
 app = express();
 const mongoose = require("mongoose");
 const cors = require("cors");
-const passengerRoute = require("./routes/entities/passenger.route")
+
+const passengerRoute = require("./routes/entities/passenger.route");
+const stationRoute = require("./routes/content/station.route");
+const tripRoute = require("./routes/content/trip.route")
 
 app.use(cors({ origin: 'http://localhost:3000' }));
 
@@ -14,6 +17,8 @@ require("dotenv").config({ path: '.env' });
 
 // Route Init
 app.use(passengerRoute)
+app.use(stationRoute);
+app.use(tripRoute);
 
 // Mongoose Connection
 mongoose.connect(

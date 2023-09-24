@@ -5,6 +5,9 @@ const TripSchema = mongoose.Schema({
         type: String,
         enum: ["morning", "afternoon", "evening"]
     },
+    trainNumber: {
+        type: String
+    },
     departStation: {
         type: String
     },

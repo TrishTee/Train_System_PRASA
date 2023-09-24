@@ -11,7 +11,8 @@ const StationSchema = mongoose.Schema({
         type: String
     },
     numberOfTrips: {
-        type: Number
+        type: Number,
+        default: 12
     },
     numberOfTicketsBought: [{
         type: String
@@ -24,11 +25,12 @@ const StationSchema = mongoose.Schema({
             type: String
         }
     }],
-    numberOfTicketsAvailable: [{
-        type: Stringtickets
+    numberOfTicketsAvailable: {
+        type: Number,
+        default: 12 //Multiply by the number seats, seats are variables as they change when people buy ticks
         // the value of this will be a function that calculates the sum of 
         //  number of trips - no of tickets bought + no of tickets cancelled
-    }]
+    }
 });
 
 module.exports = mongoose.model("Station", StationSchema)
