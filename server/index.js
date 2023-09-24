@@ -2,6 +2,7 @@ const express = require("express");
 app = express();
 const mongoose = require("mongoose");
 const cors = require("cors");
+const passengerRoute = require("./routes/entities/passenger.route")
 
 app.use(cors({ origin: 'http://localhost:3000' }));
 
@@ -10,6 +11,9 @@ app.use(express.urlencoded({ extended: true }));
 
 
 require("dotenv").config({ path: '.env' });
+
+// Route Init
+app.use(passengerRoute)
 
 // Mongoose Connection
 mongoose.connect(
