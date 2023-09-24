@@ -20,7 +20,7 @@ mongoose.connect(
         dbName: "prasa_train_ticket_system" //Collection Name
     }
 ).then(() => {
-    console.log("Connected to DB Name")
+    console.log("Connected to DB")
 });
 
 const PORT = process.env.PORT || 5000;
