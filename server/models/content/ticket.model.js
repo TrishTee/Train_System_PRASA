@@ -7,26 +7,24 @@ const TicketSchema = mongoose.Schema({
     passenger: {
         type: String
     },
-    paymentDetails: {
-        cardDetails: {
-            cardNumber: {
-                type: Number
-                // have a validation that accepts the max no of a bank no that only accepts integers
-            },
-            cardExpiryYear: {
-                type: Number
-            },
-            cardExpiryMonth: {
-                type: Number
-            },
-            cardBrand: {
-                type: Number
-            },
-            cardBank: {
-                type: Number
-            }
+    cardDetails: {
+        cardNumber: {
+            type: Number
+            // have a validation that accepts the max no of a bank no that only accepts integers
+        },
+        cardExpiryYear: {
+            type: Number
+        },
+        cardExpiryMonth: {
+            type: Number
+        },
+        cardBrand: {
+            type: Number
+        },
+        cardBank: {
+            type: Number
         }
-    },
+    }
     dayBought: {
         type: Date
     },
