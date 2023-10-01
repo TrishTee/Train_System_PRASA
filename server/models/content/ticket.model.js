@@ -24,7 +24,7 @@ const TicketSchema = mongoose.Schema({
         cardBank: {
             type: Number
         }
-    }
+    },
     dayBought: {
         type: Date
     },
