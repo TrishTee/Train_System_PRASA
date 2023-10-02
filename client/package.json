@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@stripe/react-stripe-js": "^2.3.0",
+    "@stripe/stripe-js": "^2.1.6",
+    "axios": "^1.5.1",
+    "install": "^0.13.0",
+    "npm": "^10.1.0",
+    "react-dom": "^18.2.0"
+  }
+}

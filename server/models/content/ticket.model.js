@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const TicketSchema = mongoose.Schema({
     trip: {
@@ -9,8 +9,14 @@ const TicketSchema = mongoose.Schema({
     },
     cardDetails: {
         cardNumber: {
-            type: Number
-            // have a validation that accepts the max no of a bank no that only accepts integers
+            type: Number,
+            // Add validation for card number (example: max length 16 for most credit cards)
+            validate: {
+                validator: function (value) {
+                    return /^[0-9]{16}$/.test(value);
+                },
+                message: 'Invalid card number'
+            }
         },
         cardExpiryYear: {
             type: Number
@@ -19,19 +25,22 @@ const TicketSchema = mongoose.Schema({
             type: Number
         },
         cardBrand: {
-            type: Number
+            type: String
         },
         cardBank: {
-            type: Number
+            type: String
         }
     },
     dayBought: {
-        type: Date
+        type: Date,
+        default: Date.now
     },
     status: {
         type: String,
-        enum: ["active", "used", "cancelled"]
+        enum: ["active", "used", "cancelled"],
+        default: "active"
     }
 });
 
-module.exports = mongoose.model("Ticket", TicketSchema)
+const Ticket = mongoose.model('Ticket', TicketSchema);
+module.exports = Ticket;
