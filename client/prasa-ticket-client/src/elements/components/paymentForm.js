@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 // import { useStripe, useElements, CardElement } from '@stripe/react-stripe-js';
 import axios from 'axios';
+import { DatePicker, TimePicker } from 'antd';
 
 const PaymentForm = () => {
     const [trip, setTrip] = useState('');
@@ -19,6 +20,10 @@ const PaymentForm = () => {
             console.error('Error processing payment:', error);
         }
     };
+
+    const datePicker = (date, dateString) => {
+        console.log(date, dateString);
+      };
 
     useEffect(() => {
         console.log(tripData)
@@ -76,8 +81,39 @@ const PaymentForm = () => {
                         }
                     </select>
                 </div>
+
+                {/* Date Picker */}
+                <div className='dateWrapper'>
+                    <DatePicker onChange={datePicker}/>
+                </div>
+
+                {/* Time Picker  */}
+                <div className='timeWrapper'>
+                <select className='fromTripsSelect select' 
+                    onChange={(e) => setTripData({ ...tripData, arriveStation: e.target.value })}
+                    >
+                        {
+                            stations?.map((station, i) => {
+                                // let fromStation ={tripData?.departStation===station?._id && select}
+                                return (
+                                    <option className='option' key={i} value={station?._id}>
+                                        {station?.name}
+                                    </option>
+                                )
+                            })
+                        }
+                    </select>
+                </div>
                 <button type="submit">Submit Payment</button>
             </form>
+        )
+    }
+
+    const checkout = ()=>{
+        return(
+            <div className="checkoutCard">
+                
+            </div>
         )
     }
 
