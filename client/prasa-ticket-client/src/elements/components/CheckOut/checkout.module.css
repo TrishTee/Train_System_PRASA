@@ -1,0 +1,96 @@
+.checkoutCard {
+   width: 25rem;
+   height: max-content;
+   padding: 20px 25px;
+   background-color: #fff;
+   border-radius: 1.8rem;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   font-family: sans-serif;
+}
+.Title{
+   text-align: center;
+   color:#06708a;
+   font-size: x-large;
+}
+.checkoutInfo {
+   margin-block: .5rem;
+   font-size:medium;
+}
+.stationNames{
+   color:#06708a;
+}
+.fromTo,
+.dateTime {
+   font-size: 1.2rem;
+}
+
+.fromTo,
+.dateTime,
+.user,
+.cardDetails,
+.termsConditions {
+   font-size: 1.3rem;
+}
+
+.ticketPrice,
+.numberOfTickets {
+   font-size: medium;
+}
+
+.user {
+   margin-block: 1rem;
+}
+
+.cardDetails {
+   margin-block: 1rem;
+   background-color: rgb(243, 243, 243);
+   padding: 1rem;
+   border-radius: .7rem;
+}
+
+.cardDetailsForm {
+   display: grid;
+   place-items: center;
+   gap: 1rem;
+   width: 100%;
+}
+
+.cardDetailsForm input {
+   width: 100%;
+   border: none;
+   padding: .5rem;
+   border-radius: 0.7rem;
+   outline: none;
+   font-size:large;
+}
+.cardInput{
+   padding:0px 10px;
+   background:#ffffff;
+   font-size:medium;
+}
+.termsConditions {
+   text-align: center;
+   font-size: 1rem;
+   margin-bottom: 1rem;
+}
+
+.buyTicketBtn {
+   width: 100%;
+   border: none;
+   padding: .5rem;
+   border-radius:20px;
+   background-color: #06708a;
+   outline: none;
+   color: #fff;
+   font-size: 1.2rem;
+   font-weight: 600;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition:.2s linear .1s;
+}
+
+.buyTicketBtn:hover {
+   background-color: #096e88;
+}

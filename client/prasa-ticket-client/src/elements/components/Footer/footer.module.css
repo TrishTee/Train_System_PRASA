@@ -1,0 +1,18 @@
+.container{
+   width:100%;
+   position:absolute;
+   bottom:0px;
+   height:4rem;
+   background:#06708a;
+   display:flex;
+   flex-direction: row;
+   justify-content:center;
+   align-items: center;
+   color:#f5f5f5f5;
+}
+
+.footerLinksWrapper{
+   display:flex;
+   flex-direction: row;
+   justify-content:space-between;
+}

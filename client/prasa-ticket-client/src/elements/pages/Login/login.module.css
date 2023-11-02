@@ -1,0 +1,78 @@
+.container{
+   min-height: 30rem;
+   margin:30px 0px;
+   width:100%;
+   display:flex;
+   flex-direction: column;
+   gap:40px;
+   justify-content: center;
+   align-items: center;
+}
+.wrapper{
+   width:25rem;
+   display:flex;
+   flex-direction: column;
+   gap:20px;
+   border-radius: 20px;
+   background:#ffffff;
+   padding: 30px 20px;
+}
+.formHeader{
+   display:flex;
+   padding:0px 5px;
+   flex-direction: row;
+      gap: 70px;
+}
+.HeaderText{
+   display:flex;
+   align-items: center;
+
+   font-size:25px;
+   text-align: center;
+   color:#06708a;
+}
+
+.inputWrapper{
+   display:flex;
+   flex-direction: column;
+   gap:20px;
+}
+.loginfield{
+   padding:10px 10px;
+   border:none;
+   outline:none;
+   border-radius: 10px;
+   font-size: medium;
+   background:#f5f5f5;
+}
+.checkbox_Rem_Wrapper{
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding:10px 0px;
+}
+.logInBtn{
+   padding:6px 0px; 
+   border:2px solid #06708a;
+   background:#06708a;
+   border-radius:20px;
+   outline:none;
+   font-size: 20px;
+   color:#ffffff;
+   font-weight: bold;
+   cursor:pointer;
+   transition:.2s linear .1s;
+}
+.logInBtn:hover{
+   background:inherit;
+   color:#06708a;
+
+}
+.signUp{
+   font-size: large;
+}
+a{
+   text-decoration: none;
+   color:#06708a;
+   font-weight:500;
+}
