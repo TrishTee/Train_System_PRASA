@@ -41,18 +41,13 @@ const PaymentForm = () => {
     return (
       <div className={styles.container}>
         <form className={styles.paymentForm} onSubmit={handleSubmit}>
-          <div className={styles.formWrapper}>
-            <h2 className={`${styles.formTitle} ${styles.formWrapperTitles}`}>
-              Where To?
-            </h2>
-            <span
+          <h2
               className={`${styles.formSubtitle} ${styles.formWrapperTitles}`}
             >
               Provide departure and destination details
-            </span>
-          </div>
+            </h2>
           <div className={`${styles.toWrapper} ${styles.routesWrapper}`}>
-            <div className={styles.fromIcon}>Departure</div>
+            <h3 className={styles.fromIcon}>Departure</h3>
             <select
               className={`${styles.fromTripsSelect} ${styles.select}`}
               onChange={(e) =>
@@ -71,7 +66,7 @@ const PaymentForm = () => {
           </div>
 
           <div className={`${styles.fromWrapper} ${styles.routesWrapper}`}>
-            <div className="fromIcon">Destination</div>
+            <h3 className="fromIcon">Destination</h3>
             <select
               className={`${styles.toTripsSelect} ${styles.select}`}
               onChange={(e) =>

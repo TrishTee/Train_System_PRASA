@@ -3,19 +3,35 @@
    display:flex;
    background:#ffffff;
    position:relative;
+   flex-direction: column;
 }
 .wrapper{
-   width:100%;
+   width: 100%;
    display:flex;
    flex-direction:column;
 }
+
+.CardWrapper{
+   display:flex;
+   flex-direction:column;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   background-color: #7074a0;
+   color: #fff;
+   margin: 1rem;
+   padding: 1rem;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
 .FeatureImageWrapper{
    height: 20rem;
    background-image: url("../../../images//HomeFeatured.jpg");
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   opacity: .6;
+   opacity: .8;
 }
 .shade{
    width:100%;

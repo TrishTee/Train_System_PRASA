@@ -1,7 +1,5 @@
 .container{
    width:100%;
-   position:absolute;
-   bottom:0px;
    height:4rem;
    background:#06708a;
    display:flex;
