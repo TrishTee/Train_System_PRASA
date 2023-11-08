@@ -18,14 +18,11 @@ const TicketSchema = mongoose.Schema({
                 message: 'Invalid card number'
             }
         },
-        cardExpiryYear: {
+        cardExpiryDate: {
             type: Number
         },
-        cardExpiryMonth: {
+        cardCVC: {
             type: Number
-        },
-        cardBrand: {
-            type: String
         },
         cardBank: {
             type: String
