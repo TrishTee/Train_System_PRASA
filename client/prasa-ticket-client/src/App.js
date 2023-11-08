@@ -2,7 +2,10 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 // import { Elements } from "@stripe/react-stripe-js";
 // import { loadStripe } from "@stripe/stripe-js";
-import PaymentForm from './elements/components/paymentForm';
+import PaymentForm from './elements/components/PaymentForm/paymentForm';
+import PrasaTicket from './elements/components/PrasaTicket/prasaTicket';
+import Homepage from './elements/components/HomePage/homepage';
+
 import { Trips } from './elements/pages/Trips/trips';
 import { Stations } from './elements/pages/Stations/stations';
 import { CreateStation } from './elements/pages/Temporary Pages/createStation';
