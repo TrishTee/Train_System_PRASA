@@ -2,7 +2,8 @@ import React from "react";
 import PaymentForm from "../PaymentForm/paymentForm";
 import PrasaTicket from "../PrasaTicket/prasaTicket";
 import styles from "./homepage.module.css";
-const homepage = () => {
+
+export const Homepage = () => {
     return (
         <div className={styles.container}>
             <div className={styles.wrapper}>
@@ -46,4 +47,4 @@ const homepage = () => {
     );
 };
 
-export default homepage;
+// export default Homepage;

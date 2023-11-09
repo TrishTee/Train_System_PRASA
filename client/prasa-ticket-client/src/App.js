@@ -4,7 +4,8 @@ import { Routes, Route } from 'react-router-dom';
 // import { loadStripe } from "@stripe/stripe-js";
 import PaymentForm from './elements/components/PaymentForm/paymentForm';
 import PrasaTicket from './elements/components/PrasaTicket/prasaTicket';
-import Homepage from './elements/components/HomePage/homepage';
+// import Homepage from './elements/components/HomePage/homepage';
+import {Homepage} from './elements/components/HomePage/homepage'
 
 import { Trips } from './elements/pages/Trips/trips';
 import { Stations } from './elements/pages/Stations/stations';
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<PaymentForm />} />
+        <Route path='/home' element={<Homepage />} />
         <Route path='/trips' element={<Trips />} />
         <Route path='/stations' element={<Stations />} />
         <Route path='/account/:id' element={<PaymentForm />} />

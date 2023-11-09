@@ -14,7 +14,7 @@
    width:100%;
    display:flex;
    flex-direction: column;
-   gap:20px;
+   gap:15px;
 }
 .formWrapper{
    display: flex;
@@ -109,6 +109,32 @@
    outline:none;
    border-radius: 10px;
    background:#f2f2f2;
+}
+
+hr{
+   margin: 0;
+   border: 1px solid #06708a71;
+}
+
+.inputSection{
+   display: flex;
+   gap: 10px;
+}
+
+input[type="number" i],input[type="text" i],input[type="email" i]{
+   /* justify-self: start; */
+   width: 200px;
+   height: 30px;
+   padding: 5px;
+   border-radius: 5px;
+   border: 1px solid #333;
+   padding: 0 10px;
+}
+
+
+h3{
+   margin-top: 10px;
+   margin-bottom: 0px !important;
 }
 
 

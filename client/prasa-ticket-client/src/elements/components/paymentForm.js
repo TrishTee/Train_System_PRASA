@@ -42,8 +42,8 @@ const PaymentForm = () => {
 
     const ticketInfo = () => {
         return (
-            <form onSubmit={handleSubmit}>
-                <div className='formTopWrapper'>
+            <form onSubmit={handleSubmit} style={{fontFamily:'Poppins'}}>
+                <div className='formTopWrapper' style={{fontFamily:'Poppins'}}>
                     <div className='formTitle'>Where To?</div>
                     <div className='formTitle'>Choose where you want climb the trrain and where to get off.</div>
                 </div>
@@ -112,7 +112,7 @@ const PaymentForm = () => {
     const checkout = ()=>{
         return(
             <div className="checkoutCard">
-                
+                <h2>Checkout</h2>
             </div>
         )
     }
